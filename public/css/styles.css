@@ -28,8 +28,8 @@ body{
     font-size: 16px;/*1rem = 10px*/
     font-family: 'Lexend Deca', sans-serif;
     background: fixed;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)25%);
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)25%);
+    background-repeat: no-repeat; */
     /* color: var(--blanco); */
 }
 
@@ -107,18 +107,18 @@ nav input{
 }
 
 /* FORMULARIO */
-form{
+/* form{ */
     /* font-size: 1.2rem; */
-    display: flex;
+    /* display: flex;
     align-items:first baseline;
     flex-direction: column;
     
 
-}
+} */
 
-.formSimple{
+/* .formSimple{
     display: flex;
     align-items: center;
     padding: 1.2rem;
     justify-content: space-between;
-}
+} */
