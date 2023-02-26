@@ -1,0 +1,124 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #fdab01;
+    --secundario: #ffba7f;
+    --terceario: #fe9079;
+    --cuarto: #f95844;
+    --quinto: #f84c07;
+    --gris: #757575;
+    --grisClaro: #dfe9f3;
+}
+
+/*GLOBALES*/
+*,*::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size: 16px;/*1rem = 10px*/
+    font-family: 'Lexend Deca', sans-serif;
+    background: fixed;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)25%);
+    background-repeat: no-repeat;
+    /* color: var(--blanco); */
+}
+
+a{
+    color: var(--oscuro);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* NAVEGACIÓN */
+nav{
+    /* background-color: var(--primario); */
+    background-size: cover;
+}
+
+nav input{
+    border-radius: 1.2rem;
+}
+.nav-main{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    height: 6rem;
+    padding: 2rem 0;
+}
+
+.nav-brand{
+    width: 5rem;
+}
+
+/*NAV LEFT*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 1rem;
+}
+
+.nav-main ul li a{
+    padding: .6rem;
+}
+
+.nav-main input{
+    display: flex;
+    align-items: center;
+}
+
+/*Navegación Derecha*/
+.nav-logo-rigth{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-logo-rigth img{
+    width: 12rem;
+    height: 5.5rem;
+}
+
+/* FORMULARIO */
+form{
+    /* font-size: 1.2rem; */
+    display: flex;
+    align-items:first baseline;
+    flex-direction: column;
+    
+
+}
+
+.formSimple{
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    justify-content: space-between;
+}
