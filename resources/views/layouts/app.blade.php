@@ -20,7 +20,7 @@
             </h1>
 
             <nav class=" flex gap-2 items-center">
-                <a href="#" class=" text-white p-3">Login</a>
+                <a href="/login" class=" text-white p-3">Login</a>
                 <a href="/crear-cuenta" class=" text-white">Crear cuenta</a>
 
             </nav>
