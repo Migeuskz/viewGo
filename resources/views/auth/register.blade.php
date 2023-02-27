@@ -11,7 +11,9 @@
         </div>
 
         <div class=" md:w-4/12 bg-white p-6 rounded-lg shadow-xl md:items-center">
-            <form action="">
+            <form action="{{ route('register')}}" method="POST" novalidate>
+
+                @csrf
 
                 <div class=" mb-5">
                     <label for="name" class=" mb-2 block uppercase {{--text-start--}} text-gray-500 font-bold">
@@ -22,8 +24,17 @@
                     name="name"
                     type="text"
                     placeholder="Tu nombre"
-                    class=" border p-3 w-full rounded-full"
+                    class=" border p-3 w-full rounded-full @error('name')
+                         border-quinto
+                    @enderror"
+                    value="{{old('name')}}"
                     />
+
+                    @error('name')
+                        <p class=" bg-quinto text-white my-2 rounded-full text-base p-2 text-center">
+                            {{ $message}}
+                        </p>
+                    @enderror
                 </div>
 
                 <div class=" mb-5">
@@ -37,6 +48,12 @@
                     placeholder="Tu nombre de usuario"
                     class=" border p-3 w-full rounded-full"
                     />
+
+                    @error('username')
+                        <p class=" bg-quinto text-white my-2 rounded-full text-base p-2 text-center">
+                            {{ $message}}
+                        </p>
+                    @enderror
                 </div>
 
                 <div class=" mb-5">
@@ -50,6 +67,12 @@
                     placeholder="Tu email de Registro"
                     class=" border p-3 w-full rounded-full"
                     />
+
+                    @error('email')
+                        <p class=" bg-quinto text-white my-2 rounded-full text-base p-2 text-center">
+                            {{ $message}}
+                        </p>
+                    @enderror
                 </div>
 
                 <div class=" mb-5">
@@ -63,6 +86,12 @@
                     placeholder="Password de Registro"
                     class=" border p-3 w-full rounded-full"
                     />
+
+                    @error('password')
+                        <p class=" bg-quinto text-white my-2 rounded-full text-base p-2 text-center">
+                            {{ $message}}
+                        </p>
+                    @enderror
                 </div>
 
                 <div class=" mb-5">
@@ -76,6 +105,12 @@
                     placeholder="Repite tu Password"
                     class=" border p-3 w-full rounded-full"
                     />
+
+                    @error('name')
+                        <p class=" bg-quinto text-white my-2 rounded-full text-base p-2 text-center">
+                            {{ $message}}
+                        </p>
+                    @enderror
                 </div>
 
                 <input 
