@@ -5,5 +5,5 @@
 @endsection
 
 @section('contenido')
-    bienveindo Admin
+    bienvenido Admin
 @endsection
