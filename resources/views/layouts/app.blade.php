@@ -15,10 +15,12 @@
 <body class=" bg-grisClaro">
     <header class=" p-5 border-b bg-primario shadow">
         <div class=" container mx-auto flex justify-between items-center">
-            <h1 class=" text-3xl font-black text-white">
+            <h1 class=" flex justify-center items-center gap-10 text-3xl font-black text-white ">
                 ViewGo
+                <div class=" text-black">
+                    @yield('search')
+                </div>
             </h1>
-
             <nav class=" flex gap-2 items-center">
                 <a href="/login" class=" text-white p-3">Login</a>
                 <a href="{{ route('register')}}" class=" text-white">Crear cuenta</a>
