@@ -8,6 +8,8 @@
     <link href="{{asset('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@700&display=swap')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/normalice.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    @stack('styles')
+    {{-- <script src="{{ asset('js/app.js') }} defer"></script> --}}
     <title>ViewGo - @yield('titulo')</title>
     @vite('resources/css/app.css')
 </head>
@@ -22,9 +24,9 @@
                 </div>
             </h1>
             <nav class=" flex gap-2 items-center">
-                <a href="/login" class=" text-white p-3">Login</a>
-                <a href="{{ route('register')}}" class=" text-white">Crear cuenta</a>
-
+                {{-- <a href="/login" class=" text-white p-3">Login</a>
+                <a href="{{ route('register')}}" class=" text-white">Crear cuenta</a> --}}
+                @yield('session')
             </nav>
         </div>
     </header>
@@ -34,6 +36,8 @@
             @yield('titulo')
         </h2>
         @yield('contenido')
+        @yield('edit')
+        @yield('new')
     </main>
 
     <footer class=" mt-10 text-center text-gray-500 p-5 font-bold ">
