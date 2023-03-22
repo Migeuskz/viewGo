@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="{{ asset('css/normalice.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     @stack('styles')
-    {{-- <script src="{{ asset('js/app.js') }} defer"></script> --}}
     <title>ViewGo - @yield('titulo')</title>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('jS/app.js')}}" defer></script> --}}
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
 </head>
 
 <body class=" bg-grisClaro">
